@@ -1,0 +1,10 @@
+@import url(./bootstrap.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    padding: 8px;
+}

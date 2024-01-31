@@ -1,0 +1,27 @@
+@import url(./styles.css);
+
+.playlist {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.playlist-title {
+    font-size: larger;
+}
+
+.playlist-item_title {
+    font-size: larger;
+    padding: 8px;
+    text-align: center;
+}
+
+.playlist-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    width: min-content;
+}
