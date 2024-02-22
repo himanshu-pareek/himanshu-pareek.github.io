@@ -6,3 +6,7 @@
 header, main, footer {
     padding: 8px;
 }
+
+ul, ol {
+    list-style: none;
+}
