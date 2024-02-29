@@ -8,6 +8,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 48px;
 }
 
@@ -40,7 +41,7 @@ export class MyHeader extends HTMLElement {
             ${STYLE}
 
             <header>
-                <div>Placeholder</div>
+                <div>Himanshu Pareek</div>
                 <my-navbar active-nav-item="${activeNavItemId}"></my-navbar>
                 <my-drawer></my-drawer>
             </header>
