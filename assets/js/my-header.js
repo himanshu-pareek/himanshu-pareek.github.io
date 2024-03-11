@@ -31,7 +31,6 @@ my-drawer {
 export class MyHeader extends HTMLElement {
     constructor() {
         super();
-        console.log('MyHeader constructed');
     }
 
     connectedCallback() {

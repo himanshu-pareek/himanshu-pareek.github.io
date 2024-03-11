@@ -105,8 +105,6 @@ export class MyDrawer extends HTMLElement {
   }
 
   addEventListeners() {
-    console.log (this);
-    console.log (this.shadowRoot);
     const drawerButton = this.shadowRoot.querySelector('#drawer_button');
     const drawerDiv = this.shadowRoot.querySelector('#drawer');
     drawerButton.addEventListener('click', () => {

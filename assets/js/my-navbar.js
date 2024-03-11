@@ -6,7 +6,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 48px;
+    gap: 24px;
 }
 </style>
 `;
@@ -14,12 +14,10 @@ ul {
 export class MyNavbar extends HTMLElement {
     constructor() {
         super();
-        console.log('MyNavbar constructed');
     }
 
     connectedCallback() {
         const activeNavItemId = this.getAttribute('active-nav-item');
-        console.log(`Active Nav Item = ${activeNavItemId}`);
         let html = `${STYLE}`;
         html += '\n\n<ul>';
         NAV_ITEMS.forEach(navItem => {
@@ -33,7 +31,6 @@ export class MyNavbar extends HTMLElement {
             `;
         });
         html += '</ul>'
-        console.log (html);
         const shadowRoot = this.attachShadow ({mode: 'closed'});
         shadowRoot.innerHTML = html;
     }
